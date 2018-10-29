@@ -1,15 +1,15 @@
 workflows:
   version: 2
-
-  branches:
-      only:
-        -master
-  jobs:
-    build:
-      working_directory: ~/tmp
-      docker:
-        - image: circleci/node:10
-      steps:
-        - checkout
-          - run: npm install
-          - run: npm run test
+  triggers:
+    branches:
+        only:
+          -master
+    jobs:
+      build:
+        working_directory: ~/tmp
+        docker:
+          - image: circleci/node:10
+        steps:
+          - checkout
+            - run: npm install
+            - run: npm run test
