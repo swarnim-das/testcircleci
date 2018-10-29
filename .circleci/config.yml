@@ -6,7 +6,6 @@ workflows:
 jobs:
   build:
     working_directory: ~/tmp
-    
     docker:
       - image: circleci/node:10
     steps:
