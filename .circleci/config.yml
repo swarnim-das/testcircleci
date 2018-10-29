@@ -4,12 +4,12 @@ workflows:
     branches:
         only:
           -master
-    jobs:
-      build:
-        working_directory: ~/tmp
-        docker:
-          - image: circleci/node:10
-        steps:
-          - checkout
-            - run: npm install
-            - run: npm run test
+  jobs:
+    build:
+      working_directory: ~/tmp
+      docker:
+        - image: circleci/node:10
+      steps:
+        - checkout
+          - run: npm install
+          - run: npm run test
