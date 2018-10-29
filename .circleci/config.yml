@@ -5,9 +5,9 @@ jobs:
     # branches:
     #   only:
     #     -master
-    docker:
-      - image: circleci/node:10
-    steps:
-      - checkout
-      - run: npm install
-      - run: npm run test
+            docker:
+              - image: circleci/node:10
+            steps:
+              - checkout
+              - run: npm install
+              - run: npm run test
