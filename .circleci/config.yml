@@ -12,7 +12,7 @@ jobs:
 
 workflows:
   version: 2
-  twojobs:
+  build_and_job2:
     jobs:
       - build
       - job2
