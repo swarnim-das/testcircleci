@@ -10,8 +10,7 @@ jobs:
       ? "-image"
       : "circleci/node:10"
     steps: 
-      - 
-        run: pwd
+      - run: pwd
 ...
 # workflows:
 #   version: 2
