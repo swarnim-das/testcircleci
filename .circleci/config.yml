@@ -3,15 +3,16 @@ jobs:
   build:
     machine: true
     steps:
-        - run: ls
+      - run: ls
   job2:    
     docker:
       -image:  circleci/node:10  
     steps:
-      -run: pwd
+      - run: pwd
 
 workflows:
   version: 2
-  jobs:
-    - build
-    - job2
+  twojobs:
+    jobs:
+      - build
+      - job2
