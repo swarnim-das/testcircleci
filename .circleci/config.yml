@@ -24,5 +24,9 @@
               branches: 
                 only:
                   - development
-        - deploy
+        - deploy:
+            filters:
+              branches:
+                only:
+                  - master
         
