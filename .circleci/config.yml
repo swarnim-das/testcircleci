@@ -17,6 +17,10 @@
 
   workflows:
     version: 2
+    filers:
+      branches:
+        only:
+          - master
     build_and_test:
       jobs:
         - build
