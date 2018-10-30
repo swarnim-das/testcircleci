@@ -11,5 +11,7 @@ jobs:
       -run: pwd
 
 workflows:
-  - build
-  - job2
+  version: 2
+  jobs:
+    - build
+    - job2
