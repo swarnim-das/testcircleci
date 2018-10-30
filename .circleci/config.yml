@@ -17,12 +17,12 @@
 
   workflows:
     version: 2
-    filters:
-      branches:
-        only:
-          - master
     build_and_test:
       jobs:
-        - build
+        - build:
+            filters: 
+              branches: 
+                only:
+                  - development
         - deploy
         
