@@ -1,11 +1,11 @@
 ---
   version: 2.0
   jobs: 
-    build: 
-      machine: true
-      steps: 
-        - run: ls -la
-        - run: pwd
+    # build: 
+    #   machine: true
+    #   steps: 
+    #     - run: ls -la
+    #     - run: pwd
     
     deploy: 
       docker:
