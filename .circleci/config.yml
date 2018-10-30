@@ -10,9 +10,9 @@ jobs:
     steps:
       - run: pwd
 
-workflows:
-  version: 2
-  build_and_job2:
-    jobs:
-      - build
-      - job2
+# workflows:
+#   version: 2
+#   build_and_job2:
+#     jobs:
+#       - build
+#       - job2
