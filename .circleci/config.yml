@@ -6,6 +6,7 @@
       steps: 
         - run: ls -la
         - run: pwd
+    
     deploy: 
       docker:
         - image: circleci/node:8
