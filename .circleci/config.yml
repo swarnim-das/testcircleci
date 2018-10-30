@@ -1,15 +1,18 @@
+--- 
 version: 2
-jobs:
-  build:
+jobs: 
+  build: 
     machine: true
-    steps:
+    steps: 
       - run: ls
-  job2:    
-    docker:
-      -image:  circleci/node:10  
-    steps:
-      - run: pwd
-
+  job2: 
+    docker: 
+      ? "-image"
+      : "circleci/node:10"
+    steps: 
+      - 
+        run: pwd
+...
 # workflows:
 #   version: 2
 #   build_and_job2:
