@@ -17,7 +17,7 @@
 
   workflows:
     version: 2
-    filers:
+    filters:
       branches:
         only:
           - master
